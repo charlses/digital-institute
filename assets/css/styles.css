@@ -1,0 +1,24 @@
+body {
+  background-color: powderblue;
+}
+
+form {
+  width: fit-content;
+}
+
+form label {
+  color: green;
+  display: block;
+  padding-bottom: 10px;
+}
+
+form label input {
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  height: 20px;
+}
+
+.userinfo {
+  width: fit-content;
+}

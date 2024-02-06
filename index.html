@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>React-ის კურსი | Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><h1>React-ის კურსი</h1></a>
+        <ol>
+          <li><a href="index.html">რეგისტრაცია</a></li>
+          <li><a href="second-page.html">მეორე გვერდი</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section class="registrationform">
+        <form action="second-page.html">
+          <fieldset>
+            <legend>რეგისტრაცია</legend>
+            <label for="first_name"
+              >სახელი
+              <input
+                type="text"
+                id="first_name"
+                name="f_name"
+                placeholder="თქვენი სახელი"
+                required
+              />
+            </label>
+            <label for="last_name"
+              >გვარი
+              <input
+                type="text"
+                id="last_name"
+                name="l_name"
+                placeholder="თქვენი გვარი"
+                required
+              />
+            </label>
+            <label for="email"
+              >email
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email @..."
+                required
+              />
+            </label>
+            <label for="password"
+              >Password
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="min 6 symb"
+                required
+                minlength="6"
+              />
+            </label>
+          </fieldset>
+          <input type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
