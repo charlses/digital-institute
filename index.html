@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="სახელმწიფო უნივერსიტეტის ფაქულტეტები და მათი პროგრამები" />
+    <title>სახელმწიფო უნივერსიტეტი</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- When it comes to different empty divs, I took it from your css example.. -->
+    <!-- It wasn't too clear if I should have done these with borders or the empty divs -->
+    <section class="title">
+      <div class="emptyDiv black"></div>
+      <h1>სახელმწიფო უნივერსიტეტი</h1>
+      <div class="emptyDiv black"></div>
+    </section>
+    <section class="facultiesList">
+      <h2>ფაქულტეტების დასახელება</h2>
+      <ul>
+        <li>
+          <a href="https://www.tsu.ge/en" target="_blank"
+            >მეცნიერებათა და ხელოვნების ფაქულტეტი</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tsu.ge/en" target="_blank"
+            >ბიზნესიის ფაქულტეტი</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tsu.ge/en" target="_blank">
+            სამართლის ფაქულტეტი
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tsu.ge/en" target="_blank">
+            საინჟირნო ფაქულტეტი
+          </a>
+        </li>
+      </ul>
+      <div class="emptyDiv green"></div>
+    </section>
+    <section class="businessProgrammes">
+      <h3>ბიზნესის ფაქულტეტის პროგრამები</h3>
+      <ul>
+        <li>ბიზნესის ადმინისტრირება</li>
+        <li>საბანკო საქმე</li>
+        <li>ტურიზმის მენეჯმენტი</li>
+      </ul>
+      <div class="emptyDiv red"></div>
+    </section>
+
+    <section>
+      <!-- Not very clearif it should be aligned right or padded little bit to the right -->
+      <div class="scienceHeader">
+        <h3>
+          მეცნიერებათა და ხელოვნების ფაქულტეტის <br />
+          პროგრამები
+        </h3>
+        <div class="emptyDiv blue"></div>
+      </div>
+
+      <!-- With padding/margin would have been like this! -->
+      <!-- <div style="margin-left: 400px">
+        <h3>
+          მეცნიერებათა და ხელოვნების ფაქულტეტის <br />
+          პროგრამები
+        </h3>
+        <div class="emptyDiv blue"></div>
+      </div> -->
+
+      <h4>ზუსტი მეცნიერებები:</h4>
+      <ol>
+        <li>ფიზიკა</li>
+        <li>ინფორმატიკა</li>
+        <li>ბიოლოგია</li>
+      </ol>
+      <h4>ჰუმანიტარული მეცნიერებები</h4>
+      <ol start="4">
+        <li>ქართველოლოგია</li>
+        <li>ანგლისტიკა</li>
+        <li>გერმანისტიკა</li>
+      </ol>
+      <!-- Roman styling -->
+      <ol id="roman">
+        <li>ქართველოლოგია</li>
+        <li>ანგლისტიკა</li>
+        <li>გერმანისტიკა</li>
+      </ol>
+      <a href="https://www.tsu.ge/en" target="_blank" class="cta">
+        Go to Tbilisi State University
+      </a>
+    </section>
+  </body>
+</html>
