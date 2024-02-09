@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  position: sticky;
+  padding: 10px 45px;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+main {
+  margin: 0 45px 50px 45px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+}
+.navLink:hover {
+  color: #ff68b4;
+}
+
+.hero {
+  background-color: #ff68b4;
+  height: 200px;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center;  to fully center inside the div */
+}
+
+.hero h1 {
+  margin: 0;
+}
