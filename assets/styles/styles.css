@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 30px;
+}
+
+header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.logo {
+  margin-right: atuo;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f8003f;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-link:hover {
+  color: black;
+  border-bottom: 1px solid #f8003f;
+}
+.active-link {
+  color: black;
+  border-bottom: 1px solid #f8003f;
+}
+
+.button-link {
+  display: inline-block; /* Allows for padding and margin adjustments */
+  padding: 10px 20px;
+  margin: 0 5px; /* Spacing between buttons */
+  background-color: transparent; /* Transparent background for a clean nav look */
+  color: #f8003f; /* Active color for text */
+  text-decoration: none; /* Removes underline from links */
+  border: 2px solid #f8003f; /* Border color matches active color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.button-link:hover,
+.button-link:focus {
+  background-color: #f8003f; /* Active color background on hover/focus */
+  color: white; /* Contrast color for text */
+  outline: none; /* Removes the outline to keep the design clean */
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 40px;
+  margin: 20px 20px 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 2;
+}
+
+.main {
+  display: flex;
+}
+.sidebar {
+  flex: 0 0 20%;
+  display: flex;
+  background-color: #f8003f;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.hero {
+  display: flex;
+}
+.image-content {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  align-items: center;
+  height: 400px;
+  background-color: #4a4a4a;
+  color: #f5f5f5;
+  line-height: 2;
+}
+
+.about-company,
+.useful-links,
+.newsletter {
+  width: 500px;
+}
+
+.useful-links > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.useful-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.useful-links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 17px;
+}
+
+.useful-links a:hover {
+  color: #f8003f;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input[type='email'] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 960px) {
+  nav {
+    display: none; /* I could make the navbar completely responsive but not the actual assignment */
+  }
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex: 0 0 100%;
+    /* display: none;   *** To completely hide the sidebar on small screens*/
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .image-content {
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 50px;
+  }
+  .about-company,
+  .useful-links,
+  .newsletter {
+    width: 60%;
+  }
+}
