@@ -42,22 +42,22 @@ header > nav > ul {
 }
 
 .button-link {
-  display: inline-block; /* Allows for padding and margin adjustments */
+  display: inline-block;
   padding: 10px 20px;
-  margin: 0 5px; /* Spacing between buttons */
-  background-color: transparent; /* Transparent background for a clean nav look */
-  color: #f8003f; /* Active color for text */
-  text-decoration: none; /* Removes underline from links */
-  border: 2px solid #f8003f; /* Border color matches active color */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  margin: 0 5px;
+  background-color: transparent;
+  color: #f8003f;
+  text-decoration: none;
+  border: 2px solid #f8003f;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button-link:hover,
 .button-link:focus {
-  background-color: #f8003f; /* Active color background on hover/focus */
-  color: white; /* Contrast color for text */
-  outline: none; /* Removes the outline to keep the design clean */
+  background-color: #f8003f;
+  color: white;
+  outline: none;
 }
 
 .card {
