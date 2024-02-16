@@ -1,0 +1,245 @@
+/* importing the font family from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* root colors brought over from figma */
+:root {
+  --logo: #252b42;
+  --primary: #96bb7c;
+  --secondary: #fff2f3;
+  --text: #252b42;
+  --text-light: #ffffff;
+  --text-secondary: #737373;
+}
+
+/* font family */
+* {
+  font-family: 'Montserrat';
+  margin: 0;
+  box-sizing: border-box;
+}
+/* background color on the body */
+body {
+  background-color: var(--secondary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 91px;
+  margin: 0 10%;
+}
+
+/* displaying everything correctly inside the header:  
+logo and links together and buttons on the other side */
+.logo,
+.nav,
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo,
+.nav {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+/* buttons container styling */
+.buttons {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 45px;
+}
+
+/* logo stylinh */
+.logo {
+  color: var(--logo);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* navlinks displaying in a single line */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* Nav Links anchour tags Default Styling */
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+/* Nav Links hover styling */
+.nav-links li a:hover {
+  color: var(--primary);
+}
+
+/* Styling for the sign in button */
+.sign-in {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  background-color: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+/* Styling for the sign up button */
+.sign-up {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*======= Hero stylinhgs ======== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  height: calc(100vh-91px);
+}
+
+/* Left side of the hero */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Hero welcome text styling */
+.hero-left > h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--primary);
+}
+
+.hero-left > h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  color: var(--text);
+}
+
+.hero-left > h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--text-secondary);
+}
+
+.button-pair {
+  display: flex;
+  gap: 10px;
+}
+
+.sign-up-two {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--text-light);
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.sign-up-two:hover {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+
+.outlined-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 15px 40px;
+  border-radius: 5px;
+  transition: color 0.5s;
+}
+
+.outlined-button:hover {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--text-light);
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* hero image drop shadow... spacefied in figma */
+.hero-right > img {
+  filter: drop-shadow(4px 4px 0px #00000040);
+}
+
+@media screen and (max-width: 1260px) {
+  .hero-right {
+    display: none;
+  }
+}
+
+/* Little bit of responsive styling */
+@media screen and (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+  header,
+  .hero {
+    margin: 0 5%;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: center;
+    gap: 3px;
+    cursor: pointer;
+  }
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--logo);
+    padding: 0;
+  }
+}
