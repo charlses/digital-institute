@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 94vh;
+}
+
+#students {
+  border-collapse: collapse;
+}
+
+#students td,
+#students th {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+#info tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#info tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+}
