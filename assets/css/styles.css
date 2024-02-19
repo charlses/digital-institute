@@ -1,0 +1,84 @@
+html,
+body {
+  font-size: 16px;
+  color: white;
+  background-color: #fefefe;
+}
+
+main {
+  display: flex;
+  gap: 10px;
+}
+.left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ab {
+  display: flex;
+  gap: 10px;
+}
+.a {
+  flex: 1;
+  height: 30vh;
+}
+.b {
+  flex: 2;
+}
+.cde {
+  display: flex;
+  gap: 10px;
+}
+.cd {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.c,
+.d {
+  flex: 1;
+}
+
+.e {
+  flex: 5;
+  height: 30vh;
+}
+
+.right {
+  flex: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.f {
+  flex: 1;
+}
+
+.gh {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.g {
+  flex: 3;
+}
+
+.h {
+  flex: 1;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h {
+  background-color: grey;
+  padding: 15px;
+}
