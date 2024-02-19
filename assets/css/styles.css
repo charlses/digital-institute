@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+}
+
+.blue1 {
+  background-color: blue;
+  height: 10vh;
+  flex: 1;
+}
+
+.blue2 {
+  background-color: blue;
+  height: 10vh;
+  flex: 3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.greenAndYellow {
+  display: flex;
+  gap: 10px;
+}
+
+.green {
+  background-color: green;
+  flex: 1;
+  gap: 10px;
+}
+
+.yellow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 4;
+}
+
+.yellow1 {
+  display: flex;
+  gap: 10px;
+  height: 25vh;
+}
+.yellow2 {
+  background-color: yellow;
+  height: 25vh;
+  flex: 2;
+}
+.yellow3 {
+  background-color: yellow;
+  height: 25vh;
+  flex: 1;
+}
+.yellow4 {
+  background-color: yellow;
+  height: 25vh;
+}
+
+.yellow5 {
+  display: flex;
+  gap: 10px;
+}
+
+.yellow6 {
+  background-color: yellow;
+  height: 25vh;
+  flex: 2;
+}
+.yellow7 {
+  background-color: yellow;
+  height: 25vh;
+  flex: 2;
+}
+.yellow8 {
+  background-color: yellow;
+  height: 25vh;
+  flex: 1;
+}
+
+footer {
+  background-color: red;
+  height: calc(15vh - 20px);
+}
