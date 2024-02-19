@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: blue;
+}
+header > .space30,
+header > .space80 {
+  height: 10vh;
+}
+.space20 {
+  width: 30px;
+}
+.space30 {
+  width: 30px;
+}
+.space50 {
+  width: 50px;
+}
+.space80 {
+  width: 80px;
+}
+
+.purple-pink > .space20 {
+  width: 100%;
+}
+
+.space20,
+.space50,
+.space30,
+.space80 {
+  color: white;
+  background-color: rgb(255, 153, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.x2 {
+  flex: 2;
+}
+
+.x5 {
+  flex: 5;
+}
+.x3 {
+  flex: 3;
+}
+
+.x2,
+.x5,
+.x3 {
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+
+.red {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-end {
+  flex: 1;
+  display: flex;
+  background-color: red;
+  justify-content: center;
+  align-items: end;
+}
+
+.text-top {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  background-color: red;
+}
+
+.green {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+
+.yellow {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.yellow-1 {
+  flex: 2;
+  background-color: yellow;
+  height: 100%;
+}
+.yellow-2 {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  height: 100%;
+}
+
+.yellow-2 > h2 {
+  margin-left: 50px;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+
+.purple {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+}
+
+.purple-pink {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pink {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+  width: 100%;
+}
+
+.purple1 {
+  flex: 1;
+  background-color: rgb(255, 0, 255);
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.footer {
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+}
