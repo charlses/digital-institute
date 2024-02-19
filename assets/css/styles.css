@@ -15,6 +15,9 @@ header {
   height: 10vh;
   background-color: blue;
 }
+h2 {
+  font-size: 38px;
+}
 header > .space30,
 header > .space80 {
   height: 10vh;
@@ -119,12 +122,12 @@ main {
 }
 
 .yellow-1 {
-  flex: 2;
+  flex: 1;
   background-color: yellow;
   height: 100%;
 }
 .yellow-2 {
-  flex: 4;
+  flex: 3;
   display: flex;
   align-items: center;
   background-color: yellow;
