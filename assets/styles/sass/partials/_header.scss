@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  height: 96px;
+  position: relative;
+
+  &__brand {
+    text-decoration: none;
+    color: $text-black;
+
+    h1 {
+      @include font(1.6rem, 900);
+      color: $text-black;
+
+      & > sup {
+        @include font(0.8rem, 900);
+      }
+    }
+  }
+
+  &__navigation {
+    &__links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    &__link {
+      text-decoration: none;
+      @include font(1rem, 500);
+      color: $text-black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__actionbtn {
+    @include actionButton();
+  }
+
+  &__burgermenu {
+    background-color: $black;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__nav {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+      padding-top: 96px;
+      transition: right 0.3s;
+
+      & > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+
+        & > li {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+
+          & > a {
+            text-decoration: none;
+            @include font(1rem, 500);
+            color: $text-black;
+          }
+        }
+      }
+    }
+
+    &__line {
+      width: 15px;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 2s;
+      z-index: 999;
+
+      &::before,
+      &::after {
+        content: '';
+        width: 15px;
+        height: 1px;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        z-index: 999;
+      }
+
+      &::before {
+        top: -4px;
+      }
+
+      &::after {
+        bottom: -4px;
+      }
+    }
+
+    & > input[type='checkbox'] {
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      z-index: 9999;
+      opacity: 0;
+
+      &:checked ~ .header__burgermenu__nav {
+        right: 0;
+      }
+
+      &:checked ~ .header__burgermenu__line::before {
+        top: 0;
+        background-color: $black;
+        transition: 0.3s;
+        transform: rotate(45deg);
+      }
+      &:checked ~ .header__burgermenu__line::after {
+        top: 0;
+        transition: 0.3s;
+        background-color: $black;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  // initially setting max width to 600 pixels so it is more accessible on smaller devices!
+  @media screen and (max-width: 600px) {
+    &__navigation {
+      display: none;
+    }
+    &__burgermenu {
+      display: flex;
+      position: relative;
+    }
+    &__actionbtn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  background-color: $light-gray;
+  padding: 5% 10%;
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &__image {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $black;
+      }
+      &__name {
+        @include font(1.1rem, 700);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .features {
+    padding: 4% 20px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .features {
+    padding: 4% 20px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    &__feature {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

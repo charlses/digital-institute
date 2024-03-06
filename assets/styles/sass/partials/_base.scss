@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+// mixins
+@mixin actionButton($bg: $black, $text: $text-white) {
+  background-color: $bg;
+  color: $text;
+  border: none;
+  border-radius: 32px;
+  @include font(1rem, 700);
+  padding: 12px 24px;
+}
+
+@mixin font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}

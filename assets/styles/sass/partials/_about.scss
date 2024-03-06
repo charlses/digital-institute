@@ -1,0 +1,105 @@
+.about {
+  background-color: $black;
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  &__left {
+    & > img {
+      border-radius: 12px;
+      height: 428px;
+    }
+  }
+
+  &__right {
+    color: $text-white;
+    margin-left: auto;
+    max-width: 442px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+
+    & h3 {
+      @include font(1.5rem, 900);
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      & p {
+        @include font(1rem, 400);
+      }
+      & ul {
+        list-style-position: inside;
+        & li {
+          @include font(1rem, 400);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    gap: 30px;
+    padding: 5% 20px;
+
+    &__left {
+      & > img {
+        width: 95vw;
+      }
+    }
+
+    &__right {
+      margin-left: 0;
+      flex-direction: row;
+      max-width: none;
+    }
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .about {
+    &__right {
+      margin-left: 0;
+      flex-direction: column;
+      max-width: none;
+      width: 95vw;
+      text-align: center;
+
+      &__content {
+        & > ul {
+          list-style-position: outside;
+          & > li {
+            text-align: center;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    &__right {
+      & > h3 {
+        @include font(1rem, 900);
+      }
+
+      &__content {
+        & > p {
+          @include font(0.8rem, 400);
+        }
+        & > ul {
+          & > li {
+            @include font(0.8rem, 400);
+          }
+        }
+      }
+    }
+  }
+}
