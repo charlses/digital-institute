@@ -23,7 +23,7 @@ function isValidNumber(value) {
 }
 
 function calculator() {
-  var operation = prompt(
+  let operation = prompt(
     `გთხოვთ აირჩიოთ ოპერაცია:
     1. მიმატება + 
     2. გამოკლება -
@@ -51,8 +51,8 @@ function calculator() {
     return
   }
 
-  var num1 = prompt('შეიყვანეთ პირველი რიცხვი:')
-  var num2 = prompt('შეიყვანეთ მეორე რიცხვი:')
+  let num1 = prompt('შეიყვანეთ პირველი რიცხვი:')
+  let num2 = prompt('შეიყვანეთ მეორე რიცხვი:')
 
   // Check if inputs are valid numbers
   if (!isValidNumber(num1) || !isValidNumber(num2)) {
@@ -64,7 +64,7 @@ function calculator() {
   num1 = parseFloat(num1)
   num2 = parseFloat(num2)
 
-  var result
+  let result
   switch (operation) {
     case '1':
     case '+':
